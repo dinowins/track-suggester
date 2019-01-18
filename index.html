@@ -12,7 +12,7 @@
       <h1>Epicodus Programming Track Suggester</h1>
       <h2>Take our quiz to learn which programming language and track is right for you!</h2>
       <form id="Survey">
-        <div class="form-group">
+        <div class="form-company-size">
           <label for="company-size">What size company do you want to work for?</label>
           <select class="form-control" id="company-size-select">
             <option value="company-small">Small or early stage startup</option>
@@ -20,15 +20,15 @@
             <option value="company-large">Large or full established startup</option>
           </select>
         </div>
-        <div class="form-group">
+        <div class="form-team-preference">
           <label for="team-preference">Which of the following teams would you want to work for?</label>
           <select class="form-control" id="team-preference-select">
-            <option value="team-Java">AirBnB, Uber, LinkedIn</option>
+            <option value="team-Java">Airbnb, Uber, LinkedIn</option>
             <option value="team-PhP">Tumblr, Slack, Etsy</option>
             <option value="team-frontend">Netflix, DropBox, New York Times</option>
           </select>
         </div>
-        <div class="form-group">
+        <div class="form-project-preference">
           <label for="project-preference">What kind of projects do you want to work on?</label>
           <select class="form-control" id="project-preference-select">
             <option value="projects-Java">Android applications</option>
@@ -36,7 +36,7 @@
             <option value="projects-frontend">Beautiful, functional websites</option>
           </select>
         </div>
-        <div class="form-group">
+        <div class="form-goal-preference">
           <label for="goal-preference">Why are you learning to code?</label>
           <select class="form-control" id="goal-preference-select">
             <option value="goal-Java">Challenge!</option>
@@ -44,7 +44,7 @@
             <option value="goal-frontent">Growth!</option>
           </select>
         </div>
-        <div class="form-group">
+        <div class="form-experience-level">
           <label for="experience-level">What is your level of coding expertise?</label>
           <select class="form-control" id="experience-level-select">
             <option value="experience-frontend">Beginner</option>
@@ -56,6 +56,9 @@
       </form>
 
       <div id="output">
+        <div id="Java">You should take the Java/Android track!</div>
+        <div id="PhP">You should take the PhP/Drupal track!</div>
+        <div id="Front-end">You should take the CSS/Design track!</div>
       </div>
     </div>
   </body>

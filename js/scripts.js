@@ -15,9 +15,18 @@ $(document).ready(function() {
   $("#Survey").submit(function(event) {
     event.preventDefault();
 
-    if($(".form-company-size option:company-small")) {
+    if($('select[id=project-preference-select]').val() === "projects-Java") {
       $("#Java").show();
-      console.log("yeet");
+      $("#PhP").hide();
+      $("#Front-end").hide();
+    } else if($('select[id=project-preference-select]').val() === "projects-PhP") {
+      $("#Java").hide();
+      $("#PhP").show();
+      $("#Front-end").hide();
+    } else if($('select[id=project-preference-select]').val() === "projects-frontend") {
+      $("#Java").hide();
+      $("#PhP").hide();
+      $("#Front-end").show();
     }
   });
 

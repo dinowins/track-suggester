@@ -28,6 +28,7 @@ select option {
 
 a {
   color: white;
+  text-decoration: underline;
 }
 
 .btn {

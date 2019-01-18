@@ -11,6 +11,9 @@ $(document).ready(function() {
   $("#Java").hide();
   $("#PhP").hide();
   $("#Front-end").hide();
+  $("#JavaImg").hide();
+  $("#phpImg").hide();
+  $("#JSimg").hide();
 
   $("#Survey").submit(function(event) {
     event.preventDefault();
@@ -19,14 +22,23 @@ $(document).ready(function() {
       $("#Java").show();
       $("#PhP").hide();
       $("#Front-end").hide();
+      $("#JavaImg").show();
+      $("#phpImg").hide();
+      $("#JSimg").hide();
     } else if($('select[id=project-preference-select]').val() === "projects-PhP") {
       $("#Java").hide();
       $("#PhP").show();
       $("#Front-end").hide();
+      $("#JavaImg").hide();
+      $("#phpImg").show();
+      $("#JSimg").hide();
     } else if($('select[id=project-preference-select]').val() === "projects-frontend") {
       $("#Java").hide();
       $("#PhP").hide();
       $("#Front-end").show();
+      $("#JavaImg").hide();
+      $("#phpImg").hide();
+      $("#JSimg").show();
     }
   });
 

@@ -13,54 +13,66 @@
     <div class="container">
       <h1>Epicodus Programming Track Suggester</h1>
       <h3>Take our quiz to learn which programming language and track is right for you!</h3>
-      <form id="Survey">
-        <div class="form-company-size">
-          <label for="company-size">What size company do you want to work for?</label>
-          <select class="form-control" id="company-size-select">
-            <option value="company-small">Small or early stage startup</option>
-            <option value="company-medium">Medium or mid-to-late stage startup</option>
-            <option value="company-large">Large or full established startup</option>
-          </select>
+      <div class="row">
+        <div class="col-xs-6">
+          <form id="Survey">
+            <div class="form-company-size">
+              <label for="company-size">What size company do you want to work for?</label>
+              <select class="form-control" id="company-size-select">
+                <option value="company-small">Small or early stage startup</option>
+                <option value="company-medium">Medium or mid-to-late stage startup</option>
+                <option value="company-large">Large or full established startup</option>
+              </select>
+            </div>
+            <div class="form-team-preference">
+              <label for="team-preference">Which of the following teams would you want to work for?</label>
+              <select class="form-control" id="team-preference-select">
+                <option value="team-Java">Airbnb, Uber, LinkedIn</option>
+                <option value="team-PhP">Tumblr, Slack, Etsy</option>
+                <option value="team-frontend">Netflix, DropBox, New York Times</option>
+              </select>
+            </div>
+            <div class="form-project-preference">
+              <label for="project-preference">What kind of projects do you want to work on?</label>
+              <select class="form-control" id="project-preference-select">
+                <option value="projects-Java">Android applications</option>
+                <option value="projects-PhP">Server-side content management</option>
+                <option value="projects-frontend">Beautiful, functional websites</option>
+              </select>
+            </div>
+            <div class="form-goal-preference">
+              <label for="goal-preference">Why are you learning to code?</label>
+              <select class="form-control" id="goal-preference-select">
+                <option value="goal-Java">Challenge!</option>
+                <option value="goal-Php">Money!</option>
+                <option value="goal-frontent">Growth!</option>
+              </select>
+            </div>
+            <div class="form-experience-level">
+              <label for="experience-level">What is your level of coding expertise?</label>
+              <select class="form-control" id="experience-level-select">
+                <option value="experience-frontend">Beginner</option>
+                <option value="experience-Java">Medium</option>
+                <option value="experience-PhP">Expert</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-info">Submit!</button>
+          </form>
         </div>
-        <div class="form-team-preference">
-          <label for="team-preference">Which of the following teams would you want to work for?</label>
-          <select class="form-control" id="team-preference-select">
-            <option value="team-Java">Airbnb, Uber, LinkedIn</option>
-            <option value="team-PhP">Tumblr, Slack, Etsy</option>
-            <option value="team-frontend">Netflix, DropBox, New York Times</option>
-          </select>
+        <div class="col-xs-6">
+          <div id="Img">
+            <img id="JavaImg" src="img/java.png" alt="Java logo">
+            <img id="JSimg" src="img/JS.png" alt="JS logo">
+            <img id="phpImg" src="img/php.jpeg" alt="php logo">
+          </div
         </div>
-        <div class="form-project-preference">
-          <label for="project-preference">What kind of projects do you want to work on?</label>
-          <select class="form-control" id="project-preference-select">
-            <option value="projects-Java">Android applications</option>
-            <option value="projects-PhP">Server-side content management</option>
-            <option value="projects-frontend">Beautiful, functional websites</option>
-          </select>
-        </div>
-        <div class="form-goal-preference">
-          <label for="goal-preference">Why are you learning to code?</label>
-          <select class="form-control" id="goal-preference-select">
-            <option value="goal-Java">Challenge!</option>
-            <option value="goal-Php">Money!</option>
-            <option value="goal-frontent">Growth!</option>
-          </select>
-        </div>
-        <div class="form-experience-level">
-          <label for="experience-level">What is your level of coding expertise?</label>
-          <select class="form-control" id="experience-level-select">
-            <option value="experience-frontend">Beginner</option>
-            <option value="experience-Java">Medium</option>
-            <option value="experience-PhP">Expert</option>
-          </select>
-        </div>
-        <button type="submit" class="btn btn-info">Submit!</button>
-      </form>
+      </div>
+    </div>
 
       <div id="output">
         <div id="Java">You should take the <a href="https://www.learnhowtoprogram.com/java" target="_blank">Java/Android track</a>!</div>
         <div id="PhP">You should take the <a href="https://www.learnhowtoprogram.com/php" target="_blank">PhP/Drupal track</a>!</div>
-        <div id="Front-end">You should take the <a href="https://www.learnhowtoprogram.com/tracks/front-end-development" target="_blank">Front End Development track</a>!</div>
+        <div id="Front-end">You should take the <a href="https://www.learnhowtoprogram.com/tracks/front-end-development" target="_blank">Front End track</a>!</div>
       </div>
     </div>
   </body>

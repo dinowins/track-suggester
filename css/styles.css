@@ -1,33 +1,59 @@
 body {
-  background-color: #DEA3AD;
+  /* background-color: #DEA3AD; */
+  background-image: url("../img/codeBG4.jpeg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1 {
-  font-family: "Arvo", black, italic;
+  font-family: "Arvo", italic;
   font-weight: bold;
+  color: lightblue;
+}
+
+h3 {
+  color: lightblue;
+}
+
+label {
+  color: lightblue;
+}
+
+select option {
+  background-color: gray;
+  color: yellow;
+}
+
+a {
+  color: white;
 }
 
 .btn {
   margin: 10px 10px 10px 0px;
 }
+
+#output {
+  text-align: center;
+  margin-right: 100px;
+  float: left;
+  color: lightblue;
+}
 #Survey {
   font-family: "Rubik";
   font-size: 18px;
 }
-#Java {
+#Java, #PhP, #Front-end {
   display: none;
   font-size: 30px;
   font-weight: bold;
 }
 
-#PhP {
+#JavaImg, #phpImg, #JSimg {
   display: none;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-#Front-end {
-  display: none;
-  font-size: 30px;
-  font-weight: bold;
+  margin-top: 100px;
+  margin-left: 200px;
+  max-width: 300px;
+  max-height: 300px;
 }

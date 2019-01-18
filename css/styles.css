@@ -11,14 +11,17 @@ h1 {
   font-family: "Arvo", italic;
   font-weight: bold;
   color: lightblue;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 h3 {
   color: lightblue;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 label {
   color: lightblue;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 select option {
@@ -33,6 +36,17 @@ a {
 
 .btn {
   margin: 10px 10px 10px 0px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  font-family: "Rubik";
 }
 
 #output {

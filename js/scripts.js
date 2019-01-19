@@ -18,21 +18,24 @@ $(document).ready(function() {
   $("#Survey").submit(function(event) {
     event.preventDefault();
 
-    if($('select[id=project-preference-select]').val() === "projects-Java") {
+    var selectJavaProject = 'select[id=project-preference-select]';
+    var selectPhpProject = 'select[id=project-preference-select]';
+    var selectJavascriptProject = 'select[id=project-preference-select]';
+    if($(selectJavaProject).val() === "projects-Java") {
       $("#Java").show();
       $("#PhP").hide();
       $("#Front-end").hide();
       $("#JavaImg").show();
       $("#phpImg").hide();
       $("#JSimg").hide();
-    } else if($('select[id=project-preference-select]').val() === "projects-PhP") {
+    } else if($(selectPhpProject).val() === "projects-PhP") {
       $("#Java").hide();
       $("#PhP").show();
       $("#Front-end").hide();
       $("#JavaImg").hide();
       $("#phpImg").show();
       $("#JSimg").hide();
-    } else if($('select[id=project-preference-select]').val() === "projects-frontend") {
+    } else if($(selectJavascriptProject).val() === "projects-frontend") {
       $("#Java").hide();
       $("#PhP").hide();
       $("#Front-end").show();

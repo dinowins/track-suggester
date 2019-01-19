@@ -54,6 +54,7 @@ a {
   margin-right: 100px;
   float: left;
   color: lightblue;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 #Survey {
   font-family: "Rubik";

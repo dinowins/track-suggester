@@ -11,8 +11,8 @@ _This is a quiz website that suggests the Epicodus track an aspiring programmer 
 
 ## Setup/Installation Requirements
 
-* _To clone, type the command "git clone https://github.com/dinowins/track-suggester" in your terminal of choice.
-* _To open the GH-Pages for the track suggester, type in "https://dinowins.github.io/track-suggester"
+* _To clone, type the command "git clone https://github.com/dinowins/track-suggester" in your terminal of choice._
+* _To open the GH-Pages for the track suggester, type in "https://dinowins.github.io/track-suggester"_
 
 ## Known Bugs
 
